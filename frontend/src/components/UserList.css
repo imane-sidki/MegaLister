@@ -1,0 +1,26 @@
+.user-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px; /* Adjust as needed */
+}
+
+.alphabet-menu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px; /* Space between menu and list */
+}
+
+.alphabet-menu button {
+    margin-bottom: 5px; /* Space between buttons */
+    cursor: pointer;
+}
+
+.alphabet-menu .selected {
+    font-weight: bold;
+    color: rgb(230, 88, 218);
+}
+
+.user-row {
+    text-align: left;
+}
