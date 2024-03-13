@@ -13,11 +13,11 @@ def create_app():
     db.init_app(app)
 
     with app.app_context():
-        from . import routes  # Import routes
+        from . import routes
         db.create_all()  # Create sql tables for our data models
         
         # Register a custom command
-        @app.cli.command("load-usernames") # run flask load-usernames once before running flask app
+        @app.cli.command("load-usernames") # run 'flask load-usernames' only once before running flask app
         def load_usernames():
             filepath = os.path.join(os.path.dirname(__file__), 'usernames.txt')
             from .utils import load_usernames_bulk  # called here to avoid circular dependency of 'db'

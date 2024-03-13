@@ -16,7 +16,7 @@ const UserList = () => {
         setLoading(true);
 
         try {
-            const response = await axios.get(`http://localhost:5000/users?letter=${letter}&page=${newPage}`);
+            const response = await axios.get(`http://localhost:5001/users?letter=${letter}&page=${newPage}`);
             if (newPage === 1) {
                 setUsers(response.data);
             } else {
