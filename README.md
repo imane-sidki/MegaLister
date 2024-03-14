@@ -33,6 +33,8 @@ A web app capable of smoothly loading and displaying a very long list (10 millio
     source /venv/bin/activate
 - Install requirements<br>
   ``pip install -r requirements.txt ``<br>
+- Insert the data from the usernames txt file into the database only once after creating the database:
+    ``flask load-usernames``
 - Run the flask app<br>
     ``python run.py``
 - keep this terminal openned and open a new terminal then change directory to subfolder Frontend<br>
